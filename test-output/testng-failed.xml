@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.promilo.automation.emailnotifications.jobapply.WhenUserAcceptsRecruitersRescheduleRequest">
+        <methods>
+          <include name="applyForJobTestFromExcel" invocation-numbers="0"/>
+          <include name="performSignupOnce"/>
+        </methods>
+      </class> <!-- com.promilo.automation.emailnotifications.jobapply.WhenUserAcceptsRecruitersRescheduleRequest -->
+      <class name="com.promilo.automation.emailnotifications.jobapply.UserRequestisRejectedByTheAdvertiser">
+        <methods>
+          <include name="performSignupOnce"/>
+          <include name="applyForJobTestFromExcel" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.promilo.automation.emailnotifications.jobapply.UserRequestisRejectedByTheAdvertiser -->
+      <class name="com.promilo.automation.emailnotifications.jobapply.UserSendsReminderForAppliedJob">
+        <methods>
+          <include name="performSignupOnce"/>
+          <include name="applyForJobTestFromExcel" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.promilo.automation.emailnotifications.jobapply.UserSendsReminderForAppliedJob -->
+      <class name="com.promilo.automation.emailnotifications.jobapply.UserOptsToCancelTheAppliedJob">
+        <methods>
+          <include name="applyForJobTestFromExcel" invocation-numbers="0"/>
+          <include name="performSignupOnce"/>
+        </methods>
+      </class> <!-- com.promilo.automation.emailnotifications.jobapply.UserOptsToCancelTheAppliedJob -->
+      <class name="com.promilo.automation.emailnotifications.jobapply.UserInitiatesApplyingForJob">
+        <methods>
+          <include name="applyForJobTestFromExcel" invocation-numbers="0"/>
+          <include name="performSignupOnce"/>
+        </methods>
+      </class> <!-- com.promilo.automation.emailnotifications.jobapply.UserInitiatesApplyingForJob -->
+      <class name="com.promilo.automation.emailnotifications.jobapply.WhenUsersRescheduleRequestIsDeclined">
+        <methods>
+          <include name="performSignupOnce"/>
+          <include name="applyForJobTestFromExcel" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.promilo.automation.emailnotifications.jobapply.WhenUsersRescheduleRequestIsDeclined -->
+      <class name="com.promilo.automation.emailnotifications.jobapply.WhenUserRejectsRecruitersRescheduleRequest">
+        <methods>
+          <include name="performSignupOnce"/>
+          <include name="applyForJobTestFromExcel" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.promilo.automation.emailnotifications.jobapply.WhenUserRejectsRecruitersRescheduleRequest -->
+      <class name="com.promilo.automation.emailnotifications.jobapply.WhenUsersRescheduleRequestIsAccepted">
+        <methods>
+          <include name="applyForJobTestFromExcel" invocation-numbers="0"/>
+          <include name="performSignupOnce"/>
+        </methods>
+      </class> <!-- com.promilo.automation.emailnotifications.jobapply.WhenUsersRescheduleRequestIsAccepted -->
+      <class name="com.promilo.automation.emailnotifications.jobapply.UserRequestIsAcceptedByTheAdvertiser">
+        <methods>
+          <include name="applyForJobTestFromExcel" invocation-numbers="0"/>
+          <include name="performSignupOnce"/>
+        </methods>
+      </class> <!-- com.promilo.automation.emailnotifications.jobapply.UserRequestIsAcceptedByTheAdvertiser -->
+      <class name="com.promilo.automation.emailnotifications.jobapply.WhenUsersOnlineMeetingWithRecruiterIsCompleted">
+        <methods>
+          <include name="performSignupOnce"/>
+          <include name="applyForJobTestFromExcel" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.promilo.automation.emailnotifications.jobapply.WhenUsersOnlineMeetingWithRecruiterIsCompleted -->
+      <class name="com.promilo.automation.emailnotifications.jobapply.UserReceivesRescheduleRequestFromAdvertiser">
+        <methods>
+          <include name="performSignupOnce"/>
+          <include name="applyForJobTestFromExcel" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.promilo.automation.emailnotifications.jobapply.UserReceivesRescheduleRequestFromAdvertiser -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

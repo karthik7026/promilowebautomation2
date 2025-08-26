@@ -1,0 +1,1602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="0" failed="11" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-26T12:23:02 IST" name="Default suite" finished-at="2025-08-26T12:33:02 IST" duration-ms="599610">
+    <groups>
+    </groups>
+    <test started-at="2025-08-26T12:23:02 IST" name="Default test" finished-at="2025-08-26T12:33:02 IST" duration-ms="599610">
+      <class name="com.promilo.automation.emailnotifications.jobapply.WhenUserRejectsRecruitersRescheduleRequest">
+        <test-method is-config="true" signature="performSignupOnce()[pri:0, instance:com.promilo.automation.emailnotifications.jobapply.WhenUserRejectsRecruitersRescheduleRequest@1e4d3ce5]" started-at="2025-08-26T12:21:32 IST" name="performSignupOnce" finished-at="2025-08-26T12:21:56 IST" duration-ms="23777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performSignupOnce -->
+        <test-method signature="applyForJobTestFromExcel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:com.promilo.automation.emailnotifications.jobapply.WhenUserRejectsRecruitersRescheduleRequest@1e4d3ce5]" started-at="2025-08-26T12:24:19 IST" name="applyForJobTestFromExcel" data-provider="jobApplicationData" finished-at="2025-08-26T12:25:12 IST" duration-ms="53284" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_RegisteredUserJobApply]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RegisteredUserJobApply]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Karthik@88]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Telecom / ISP, Advertising & Marketing, Animation & VFX]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9999]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("li.time-slot-box.list-group-item").first()
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("li.time-slot-box.list-group-item").first()
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+at com.microsoft.playwright.Locator.click(Locator.java:2500)
+at com.promilo.automation.emailnotifications.jobapply.WhenUserRejectsRecruitersRescheduleRequest.applyForJobAsRegisteredUser(WhenUserRejectsRecruitersRescheduleRequest.java:214)
+at com.promilo.automation.emailnotifications.jobapply.WhenUserRejectsRecruitersRescheduleRequest.applyForJobTestFromExcel(WhenUserRejectsRecruitersRescheduleRequest.java:115)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("li.time-slot-box.list-group-item").first()
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyForJobTestFromExcel -->
+      </class> <!-- com.promilo.automation.emailnotifications.jobapply.WhenUserRejectsRecruitersRescheduleRequest -->
+      <class name="com.promilo.automation.emailnotifications.jobapply.WhenUsersOnlineMeetingWithRecruiterIsCompleted">
+        <test-method is-config="true" signature="performSignupOnce()[pri:0, instance:com.promilo.automation.emailnotifications.jobapply.WhenUsersOnlineMeetingWithRecruiterIsCompleted@27508c5d]" started-at="2025-08-26T12:21:56 IST" name="performSignupOnce" finished-at="2025-08-26T12:22:19 IST" duration-ms="22982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performSignupOnce -->
+        <test-method signature="applyForJobTestFromExcel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:com.promilo.automation.emailnotifications.jobapply.WhenUsersOnlineMeetingWithRecruiterIsCompleted@27508c5d]" started-at="2025-08-26T12:23:04 IST" name="applyForJobTestFromExcel" data-provider="jobApplicationData" finished-at="2025-08-26T12:24:18 IST" duration-ms="74703" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_RegisteredUserJobApply]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RegisteredUserJobApply]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Karthik@88]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Telecom / ISP, Advertising & Marketing, Animation & VFX]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9999]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("//span[text()='My Meeting']")
+-     - locator resolved to <span class="menu-item text-truncate">My Meeting</span>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - element is outside of the viewport
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - element is outside of the viewport
+-     - retrying click action
+-       - waiting 100ms
+-     55 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - element is outside of the viewport
+-      - retrying click action
+-        - waiting 500ms
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("//span[text()='My Meeting']")
+-     - locator resolved to <span class="menu-item text-truncate">My Meeting</span>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - element is outside of the viewport
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - element is outside of the viewport
+-     - retrying click action
+-       - waiting 100ms
+-     55 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - element is outside of the viewport
+-      - retrying click action
+-        - waiting 500ms
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+at com.microsoft.playwright.Locator.click(Locator.java:2500)
+at com.promilo.automation.emailnotifications.jobapply.WhenUsersOnlineMeetingWithRecruiterIsCompleted.applyForJobAsRegisteredUser(WhenUsersOnlineMeetingWithRecruiterIsCompleted.java:247)
+at com.promilo.automation.emailnotifications.jobapply.WhenUsersOnlineMeetingWithRecruiterIsCompleted.applyForJobTestFromExcel(WhenUsersOnlineMeetingWithRecruiterIsCompleted.java:119)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("//span[text()='My Meeting']")
+-     - locator resolved to <span class="menu-item text-truncate">My Meeting</span>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - element is outside of the viewport
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - element is outside of the viewport
+-     - retrying click action
+-       - waiting 100ms
+-     55 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - element is outside of the viewport
+-      - retrying click action
+-        - waiting 500ms
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyForJobTestFromExcel -->
+      </class> <!-- com.promilo.automation.emailnotifications.jobapply.WhenUsersOnlineMeetingWithRecruiterIsCompleted -->
+      <class name="com.promilo.automation.emailnotifications.jobapply.WhenUserAcceptsRecruitersRescheduleRequest">
+        <test-method is-config="true" signature="performSignupOnce()[pri:0, instance:com.promilo.automation.emailnotifications.jobapply.WhenUserAcceptsRecruitersRescheduleRequest@3ddc6915]" started-at="2025-08-26T12:21:09 IST" name="performSignupOnce" finished-at="2025-08-26T12:21:32 IST" duration-ms="22916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performSignupOnce -->
+        <test-method signature="applyForJobTestFromExcel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:com.promilo.automation.emailnotifications.jobapply.WhenUserAcceptsRecruitersRescheduleRequest@3ddc6915]" started-at="2025-08-26T12:25:12 IST" name="applyForJobTestFromExcel" data-provider="jobApplicationData" finished-at="2025-08-26T12:26:05 IST" duration-ms="53425" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_RegisteredUserJobApply]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RegisteredUserJobApply]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Karthik@88]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Telecom / ISP, Advertising & Marketing, Animation & VFX]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9999]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("li.time-slot-box.list-group-item").first()
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("li.time-slot-box.list-group-item").first()
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+at com.microsoft.playwright.Locator.click(Locator.java:2500)
+at com.promilo.automation.emailnotifications.jobapply.WhenUserAcceptsRecruitersRescheduleRequest.applyForJobAsRegisteredUser(WhenUserAcceptsRecruitersRescheduleRequest.java:213)
+at com.promilo.automation.emailnotifications.jobapply.WhenUserAcceptsRecruitersRescheduleRequest.applyForJobTestFromExcel(WhenUserAcceptsRecruitersRescheduleRequest.java:113)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("li.time-slot-box.list-group-item").first()
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyForJobTestFromExcel -->
+      </class> <!-- com.promilo.automation.emailnotifications.jobapply.WhenUserAcceptsRecruitersRescheduleRequest -->
+      <class name="com.promilo.automation.emailnotifications.jobapply.WhenUsersRescheduleRequestIsAccepted">
+        <test-method is-config="true" signature="performSignupOnce()[pri:0, instance:com.promilo.automation.emailnotifications.jobapply.WhenUsersRescheduleRequestIsAccepted@704deff2]" started-at="2025-08-26T12:22:19 IST" name="performSignupOnce" finished-at="2025-08-26T12:22:41 IST" duration-ms="21695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performSignupOnce -->
+        <test-method signature="applyForJobTestFromExcel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:com.promilo.automation.emailnotifications.jobapply.WhenUsersRescheduleRequestIsAccepted@704deff2]" started-at="2025-08-26T12:26:06 IST" name="applyForJobTestFromExcel" data-provider="jobApplicationData" finished-at="2025-08-26T12:27:00 IST" duration-ms="54075" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_RegisteredUserJobApply]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RegisteredUserJobApply]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Karthik@88]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Telecom / ISP, Advertising & Marketing, Animation & VFX]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9999]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("li.time-slot-box.list-group-item").first()
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("li.time-slot-box.list-group-item").first()
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+at com.microsoft.playwright.Locator.click(Locator.java:2500)
+at com.promilo.automation.emailnotifications.jobapply.WhenUsersRescheduleRequestIsAccepted.applyJobDetailsFlow(WhenUsersRescheduleRequestIsAccepted.java:217)
+at com.promilo.automation.emailnotifications.jobapply.WhenUsersRescheduleRequestIsAccepted.applyForJobAsRegisteredUser(WhenUsersRescheduleRequestIsAccepted.java:138)
+at com.promilo.automation.emailnotifications.jobapply.WhenUsersRescheduleRequestIsAccepted.applyForJobTestFromExcel(WhenUsersRescheduleRequestIsAccepted.java:110)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("li.time-slot-box.list-group-item").first()
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyForJobTestFromExcel -->
+      </class> <!-- com.promilo.automation.emailnotifications.jobapply.WhenUsersRescheduleRequestIsAccepted -->
+      <class name="com.promilo.automation.emailnotifications.jobapply.UserOptsToCancelTheAppliedJob">
+        <test-method is-config="true" signature="performSignupOnce()[pri:0, instance:com.promilo.automation.emailnotifications.jobapply.UserOptsToCancelTheAppliedJob@379614be]" started-at="2025-08-26T12:19:17 IST" name="performSignupOnce" finished-at="2025-08-26T12:19:40 IST" duration-ms="22345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performSignupOnce -->
+        <test-method signature="applyForJobTestFromExcel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:com.promilo.automation.emailnotifications.jobapply.UserOptsToCancelTheAppliedJob@379614be]" started-at="2025-08-26T12:27:00 IST" name="applyForJobTestFromExcel" data-provider="jobApplicationData" finished-at="2025-08-26T12:27:42 IST" duration-ms="42192" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_RegisteredUserJobApply]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RegisteredUserJobApply]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Karthik@88]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Telecom / ISP, Advertising & Marketing, Animation & VFX]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9999]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("//span[text()='Google']").nth(1)
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("//span[text()='Google']").nth(1)
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+at com.microsoft.playwright.Locator.click(Locator.java:2500)
+at com.promilo.automation.emailnotifications.jobapply.UserOptsToCancelTheAppliedJob.applyJobDetailsFlow(UserOptsToCancelTheAppliedJob.java:148)
+at com.promilo.automation.emailnotifications.jobapply.UserOptsToCancelTheAppliedJob.applyForJobAsRegisteredUser(UserOptsToCancelTheAppliedJob.java:129)
+at com.promilo.automation.emailnotifications.jobapply.UserOptsToCancelTheAppliedJob.applyForJobTestFromExcel(UserOptsToCancelTheAppliedJob.java:110)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("//span[text()='Google']").nth(1)
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyForJobTestFromExcel -->
+      </class> <!-- com.promilo.automation.emailnotifications.jobapply.UserOptsToCancelTheAppliedJob -->
+      <class name="com.promilo.automation.emailnotifications.jobapply.UserReceivesRescheduleRequestFromAdvertiser">
+        <test-method is-config="true" signature="performSignupOnce()[pri:0, instance:com.promilo.automation.emailnotifications.jobapply.UserReceivesRescheduleRequestFromAdvertiser@404bbcbd]" started-at="2025-08-26T12:19:40 IST" name="performSignupOnce" finished-at="2025-08-26T12:20:01 IST" duration-ms="21587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performSignupOnce -->
+        <test-method signature="applyForJobTestFromExcel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:com.promilo.automation.emailnotifications.jobapply.UserReceivesRescheduleRequestFromAdvertiser@404bbcbd]" started-at="2025-08-26T12:27:42 IST" name="applyForJobTestFromExcel" data-provider="jobApplicationData" finished-at="2025-08-26T12:28:38 IST" duration-ms="55525" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_RegisteredUserJobApply]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RegisteredUserJobApply]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Karthik@88]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Telecom / ISP, Advertising & Marketing, Animation & VFX]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9999]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("li.time-slot-box.list-group-item").first()
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("li.time-slot-box.list-group-item").first()
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+at com.microsoft.playwright.Locator.click(Locator.java:2500)
+at com.promilo.automation.emailnotifications.jobapply.UserReceivesRescheduleRequestFromAdvertiser.applyForJobAsRegisteredUser(UserReceivesRescheduleRequestFromAdvertiser.java:215)
+at com.promilo.automation.emailnotifications.jobapply.UserReceivesRescheduleRequestFromAdvertiser.applyForJobTestFromExcel(UserReceivesRescheduleRequestFromAdvertiser.java:115)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("li.time-slot-box.list-group-item").first()
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyForJobTestFromExcel -->
+      </class> <!-- com.promilo.automation.emailnotifications.jobapply.UserReceivesRescheduleRequestFromAdvertiser -->
+      <class name="com.promilo.automation.emailnotifications.jobapply.UserRequestisRejectedByTheAdvertiser">
+        <test-method is-config="true" signature="performSignupOnce()[pri:0, instance:com.promilo.automation.emailnotifications.jobapply.UserRequestisRejectedByTheAdvertiser@1acaf3d]" started-at="2025-08-26T12:20:24 IST" name="performSignupOnce" finished-at="2025-08-26T12:20:47 IST" duration-ms="23144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performSignupOnce -->
+        <test-method signature="applyForJobTestFromExcel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:com.promilo.automation.emailnotifications.jobapply.UserRequestisRejectedByTheAdvertiser@1acaf3d]" started-at="2025-08-26T12:29:33 IST" name="applyForJobTestFromExcel" data-provider="jobApplicationData" finished-at="2025-08-26T12:30:26 IST" duration-ms="53518" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_RegisteredUserJobApply]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RegisteredUserJobApply]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Karthik@88]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Telecom / ISP, Advertising & Marketing, Animation & VFX]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9999]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("li.time-slot-box.list-group-item").first()
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("li.time-slot-box.list-group-item").first()
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+at com.microsoft.playwright.Locator.click(Locator.java:2500)
+at com.promilo.automation.emailnotifications.jobapply.UserRequestisRejectedByTheAdvertiser.applyForJobAsRegisteredUser(UserRequestisRejectedByTheAdvertiser.java:211)
+at com.promilo.automation.emailnotifications.jobapply.UserRequestisRejectedByTheAdvertiser.applyForJobTestFromExcel(UserRequestisRejectedByTheAdvertiser.java:114)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("li.time-slot-box.list-group-item").first()
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyForJobTestFromExcel -->
+      </class> <!-- com.promilo.automation.emailnotifications.jobapply.UserRequestisRejectedByTheAdvertiser -->
+      <class name="com.promilo.automation.emailnotifications.jobapply.UserSendsReminderForAppliedJob">
+        <test-method is-config="true" signature="performSignupOnce()[pri:0, instance:com.promilo.automation.emailnotifications.jobapply.UserSendsReminderForAppliedJob@1e81f160]" started-at="2025-08-26T12:20:47 IST" name="performSignupOnce" finished-at="2025-08-26T12:21:09 IST" duration-ms="22106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performSignupOnce -->
+        <test-method signature="applyForJobTestFromExcel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:com.promilo.automation.emailnotifications.jobapply.UserSendsReminderForAppliedJob@1e81f160]" started-at="2025-08-26T12:28:38 IST" name="applyForJobTestFromExcel" data-provider="jobApplicationData" finished-at="2025-08-26T12:29:33 IST" duration-ms="54926" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_RegisteredUserJobApply]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RegisteredUserJobApply]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Karthik@88]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Telecom / ISP, Advertising & Marketing, Animation & VFX]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9999]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("li.time-slot-box.list-group-item").first()
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("li.time-slot-box.list-group-item").first()
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+at com.microsoft.playwright.Locator.click(Locator.java:2500)
+at com.promilo.automation.emailnotifications.jobapply.UserSendsReminderForAppliedJob.applyForJobAsRegisteredUser(UserSendsReminderForAppliedJob.java:209)
+at com.promilo.automation.emailnotifications.jobapply.UserSendsReminderForAppliedJob.applyForJobTestFromExcel(UserSendsReminderForAppliedJob.java:109)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("li.time-slot-box.list-group-item").first()
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyForJobTestFromExcel -->
+      </class> <!-- com.promilo.automation.emailnotifications.jobapply.UserSendsReminderForAppliedJob -->
+      <class name="com.promilo.automation.emailnotifications.jobapply.UserRequestIsAcceptedByTheAdvertiser">
+        <test-method is-config="true" signature="performSignupOnce()[pri:0, instance:com.promilo.automation.emailnotifications.jobapply.UserRequestIsAcceptedByTheAdvertiser@1bab8268]" started-at="2025-08-26T12:20:01 IST" name="performSignupOnce" finished-at="2025-08-26T12:20:24 IST" duration-ms="23114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performSignupOnce -->
+        <test-method signature="applyForJobTestFromExcel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:com.promilo.automation.emailnotifications.jobapply.UserRequestIsAcceptedByTheAdvertiser@1bab8268]" started-at="2025-08-26T12:31:09 IST" name="applyForJobTestFromExcel" data-provider="jobApplicationData" finished-at="2025-08-26T12:32:05 IST" duration-ms="55570" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_RegisteredUserJobApply]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RegisteredUserJobApply]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Karthik@88]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Telecom / ISP, Advertising & Marketing, Animation & VFX]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9999]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("li.time-slot-box.list-group-item").first()
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("li.time-slot-box.list-group-item").first()
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+at com.microsoft.playwright.Locator.click(Locator.java:2500)
+at com.promilo.automation.emailnotifications.jobapply.UserRequestIsAcceptedByTheAdvertiser.applyForJobAsRegisteredUser(UserRequestIsAcceptedByTheAdvertiser.java:212)
+at com.promilo.automation.emailnotifications.jobapply.UserRequestIsAcceptedByTheAdvertiser.applyForJobTestFromExcel(UserRequestIsAcceptedByTheAdvertiser.java:115)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("li.time-slot-box.list-group-item").first()
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyForJobTestFromExcel -->
+      </class> <!-- com.promilo.automation.emailnotifications.jobapply.UserRequestIsAcceptedByTheAdvertiser -->
+      <class name="com.promilo.automation.emailnotifications.jobapply.WhenUsersRescheduleRequestIsDeclined">
+        <test-method is-config="true" signature="performSignupOnce()[pri:0, instance:com.promilo.automation.emailnotifications.jobapply.WhenUsersRescheduleRequestIsDeclined@6986852]" started-at="2025-08-26T12:22:41 IST" name="performSignupOnce" finished-at="2025-08-26T12:23:02 IST" duration-ms="21345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performSignupOnce -->
+        <test-method signature="applyForJobTestFromExcel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:com.promilo.automation.emailnotifications.jobapply.WhenUsersRescheduleRequestIsDeclined@6986852]" started-at="2025-08-26T12:30:27 IST" name="applyForJobTestFromExcel" data-provider="jobApplicationData" finished-at="2025-08-26T12:31:09 IST" duration-ms="42833" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_RegisteredUserJobApply]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RegisteredUserJobApply]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Karthik@88]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Telecom / ISP, Advertising & Marketing, Animation & VFX]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9999]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("//p[text()='Developer']").nth(1)
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("//p[text()='Developer']").nth(1)
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+at com.microsoft.playwright.Locator.click(Locator.java:2500)
+at com.promilo.automation.emailnotifications.jobapply.WhenUsersRescheduleRequestIsDeclined.applyJobDetailsFlow(WhenUsersRescheduleRequestIsDeclined.java:153)
+at com.promilo.automation.emailnotifications.jobapply.WhenUsersRescheduleRequestIsDeclined.applyForJobAsRegisteredUser(WhenUsersRescheduleRequestIsDeclined.java:138)
+at com.promilo.automation.emailnotifications.jobapply.WhenUsersRescheduleRequestIsDeclined.applyForJobTestFromExcel(WhenUsersRescheduleRequestIsDeclined.java:110)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("//p[text()='Developer']").nth(1)
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyForJobTestFromExcel -->
+      </class> <!-- com.promilo.automation.emailnotifications.jobapply.WhenUsersRescheduleRequestIsDeclined -->
+      <class name="com.promilo.automation.emailnotifications.jobapply.UserInitiatesApplyingForJob">
+        <test-method is-config="true" signature="performSignupOnce()[pri:0, instance:com.promilo.automation.emailnotifications.jobapply.UserInitiatesApplyingForJob@a307a8c]" started-at="2025-08-26T12:18:41 IST" name="performSignupOnce" finished-at="2025-08-26T12:19:17 IST" duration-ms="36189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performSignupOnce -->
+        <test-method signature="applyForJobTestFromExcel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:com.promilo.automation.emailnotifications.jobapply.UserInitiatesApplyingForJob@a307a8c]" started-at="2025-08-26T12:32:05 IST" name="applyForJobTestFromExcel" data-provider="jobApplicationData" finished-at="2025-08-26T12:33:02 IST" duration-ms="56565" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_RegisteredUserJobApply]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RegisteredUserJobApply]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Karthik@88]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Telecom / ISP, Advertising & Marketing, Animation & VFX]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9999]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("li.time-slot-box.list-group-item").first()
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("li.time-slot-box.list-group-item").first()
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+at com.microsoft.playwright.Locator.click(Locator.java:2500)
+at com.promilo.automation.emailnotifications.jobapply.UserInitiatesApplyingForJob.applyJobDetailsFlow(UserInitiatesApplyingForJob.java:232)
+at com.promilo.automation.emailnotifications.jobapply.UserInitiatesApplyingForJob.applyForJobAsRegisteredUser(UserInitiatesApplyingForJob.java:131)
+at com.promilo.automation.emailnotifications.jobapply.UserInitiatesApplyingForJob.applyForJobTestFromExcel(UserInitiatesApplyingForJob.java:112)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\progress.js:76:26)
+    at Frame.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\frames.js:959:23)
+    at FrameDispatcher.click (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\frameDispatcher.js:117:30)
+    at FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:88:40)
+    at DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-17548716709169652200\package\lib\server\dispatchers\dispatcher.js:309:39)
+}
+Call log:
+-   - waiting for locator("li.time-slot-box.list-group-item").first()
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyForJobTestFromExcel -->
+      </class> <!-- com.promilo.automation.emailnotifications.jobapply.UserInitiatesApplyingForJob -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
